@@ -155,23 +155,6 @@ public class KdTree {
 
         if (n != null) {
 
-
-            // System.out.print( "we are at the point: " + n.point);
-
-            // if (n.leftSon != null) {
-              //  System.out.print(" left son = " + n.leftSon.point);
-           //  }
-
-            // if (n.rightSon != null) {
-              //  System.out.print(" right son = " + n.rightSon.point);
-            // }
-
-            // System.out.println();
-
-            // System.out.println("Winners " + winner + " distance: " + distance + " our distance: " + n.point.distanceTo(p));
-            // System.out.println();
-
-
             // Update a winner and a distance if we have found closer point.
             if (n.point.distanceTo(p) < distance) {
                 winner = n.point;
@@ -207,8 +190,6 @@ public class KdTree {
 
 
                 if (n.point.y() <= p.y()) {
-
-                    //System.out.println(winner);
 
                     Point2D possible1 = champion(n.rightSon, p, distance, winner, (byte) 0);
 
